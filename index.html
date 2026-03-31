@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shuta Chai</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffaf5;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://images.unsplash.com/photo-1511920170033-f8396924c348');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  border: none;
+  background: #c97b2a;
+  color: white;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* SECTION */
+section {
+  padding: 60px 10%;
+}
+
+/* MENU */
+.menu h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ABOUT */
+.about {
+  background: #f5e6d8;
+  border-radius: 10px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  text-align: center;
+}
+
+.testimonial {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+}
+
+/* CONTACT */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  background: #c97b2a;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Shuta Chai</h1>
+  <p>Where every sip tells a story ☕</p>
+  <button>Explore Menu</button>
+</div>
+
+<!-- MENU -->
+<section class="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item"><h3>Classic Chai <span>Rs. 120</span></h3></div>
+    <div class="menu-item"><h3>Doodh Patti <span>Rs. 150</span></h3></div>
+    <div class="menu-item"><h3>Karak Chai <span>Rs. 180</span></h3></div>
+    <div class="menu-item"><h3>Green Tea <span>Rs. 100</span></h3></div>
+    <div class="menu-item"><h3>Chocolate Chai <span>Rs. 200</span></h3></div>
+    <div class="menu-item"><h3>Elaichi Chai <span>Rs. 170</span></h3></div>
+    <div class="menu-item"><h3>Special Shuta Mix <span>Rs. 220</span></h3></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    At Shuta Chai, we believe chai is more than just a drink—it's an experience.
+    From late-night conversations to early morning refreshment, we bring people together
+    over perfectly brewed tea made with love and tradition.
+  </p>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial">"Best chai spot in town! Cozy vibe and amazing taste."</div>
+  <div class="testimonial">"Their Karak Chai is unbeatable. Highly recommend!"</div>
+  <div class="testimonial">"Perfect place to hang out with friends."</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Shuta Chai | Made with ❤️</p>
+</footer>
+
+</body>
+</html>
